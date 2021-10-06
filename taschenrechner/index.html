@@ -3,8 +3,7 @@
    <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Taschenrechner</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+       <title>Taschenechner</title>
    </head>
    <style>
        *{
@@ -14,11 +13,13 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #091921
+    position:absolute;
+    background: #091921;
+}
+form{
+  position:absolute;
+    top:300px;
+    left:180%;
 }
 .calculater{
     position: relative;
@@ -58,8 +59,16 @@ body{
 .calculater span.equal{
     background: #00fff2;
 }
+.titel{
+    position:absolute;
+    top:20%;
+    left:177%;
+    color: #fff;
+    font-size:60px;
+}
    </style>
    <body>
+     <p class="titel">Taschenrechner</p>
      <form class="calculater" name="calc">
          <input class="value" type="text" name="txt" readonly="">
          <span class="num clear" onclick="document.calc.txt.value =''">c</span>
