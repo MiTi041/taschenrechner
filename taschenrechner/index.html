@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=eng>
     <head>
-        <title>Animated Login Form</title>
+        <title>Login</title>
         <link rel="stylesheet"> 
         <script>
 
@@ -29,13 +29,15 @@
                var password = document.getElementById("password").value
                for(i =0;i<objPeople.length; i++){
                   if(username==objPeople[i].username && password == objPeople[i].password){
-                     window.location="file:///F:/taschenrechner/index.html"
+                     window.location="http://F:/taschenrechner/index.html"
                      return
                   }
                   else{
                      
                   }
-               }console.log("Falscher Benutzername oder falsches Passwort")
+               }alert("Falscher Benutzername oder falsches Passwort")
+               refresh
+
            }
            
 
