@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+</head>
+
+
+	<style type="text/css">
+	
+	
+	nav ul,li {
+        list-style-type: none;
+        text-decoration: none;
+    }
+	body{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   background: #34495e;
+   background-size: cover;
+   text-decoration: none;   
+}
+.box{
+   width: 300px;
+   padding: 40px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: #191919;
+   text-align: center;
+   text-decoration: none;
+   height:40%;
+   z-index: -1;
+}
+.box h1{
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+   text-decoration: none;
+}
+.box input[type = "text"],.box input[type = "password"]{
+   border:0;
+   background:none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding:  14px 10px;
+   width: 200px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+
+}
+
+.box input[type = "submit"]{
+   border:0;
+   background: none;
+   display: block;
+   margin: 20px auto ;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding: 14px 40px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+   cursor: pointer;
+}
+.kaufen:hover{
+   background: #2ecc71;
+   text-decoration: none;
+}
+nav ul,li {
+   list-style-type: none;
+   text-decoration: none;
+}
+.kaufen { 
+   background: none;
+   display: block;
+   margin: 20px auto ;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding: 14px 40px;
+   margin-top: 33.7%;
+   color: gray;
+   border-radius: 24px;
+   transition: 0.25s;
+   cursor: pointer;
+   text-decoration: none;
+   margin-right:47.1%;
+
+}
+a{
+    text-decoration: none;
+}
+.passwort{
+	position:absolute;
+	top:44%;
+	left:20.3%;
+
+}
+.signup{
+	position:absolute;
+	top:60%;
+	left:33%;
+}
+.zumanmelden{
+	font-size:90%; 
+	font-family:sans-serif; 
+	color:white;
+	position:absolute;
+	top:85%;
+	left:20%;
+}
+
+	</style>
+<body>
+	
+		
+		<form class="box" method="post">
+		    <h1>CULU Registrierung</h1>
+			<input class="benutzername" type="text" name="user_name" placeholder="Benutzername"><br><br>
+			<input class="passwort" type="password" name="password" placeholder="Passwort"><br><br>
+			<input class="signup" type="submit" value="Signup" placeholder="Regestrieren"><br><br>
+			<a class="zumanmelden" href="login.php">Schon Registriert? Zum Anmelden</a>
+		</form>
+		
+	
+</body>
+</html>
