@@ -8,8 +8,11 @@
        <link rel="preconnect" href="https://fonts.googleeapis.com">
    </head>
    <script>
-
-   alert("Hi "+username)
+   document.getElementById("button").onclick = function(){
+       var myName = document.getElementById("username").value;
+       alert("Hi ",myName)
+   }
+   
 
    </script>
    <style>
