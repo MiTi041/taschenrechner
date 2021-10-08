@@ -23,6 +23,7 @@ var objPeople = [
      for(i =0;i<objPeople.length; i++){
         if(username==objPeople[i].username && password == objPeople[i].password){
            window.location="http://culu.live/taschenrechner.html"
+           alert("Hi "+username)
            return
         }
         else{
