@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang=eng>
-   <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compitable" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Taschenrechner</title>
-       <link rel="preconnect" href="https://fonts.googleeapis.com">
-       <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-   <style>
-       *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #091921
-}
-.calculater{
-    position: relative;
-    display: grid;
-}
-.calculater .value{
-    grid-column: span 4;
-    height: 100px;
-    text-align: right;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 18px;
-}
-.calculater span{
-    display: grid;
-    width: 120px;
-    height: 120px;
-    color: #fff;
-    background: #0c2835;
-    place-items: center;
-    border: 1px solid rgba(0,0,0,0.1);
-}
-.calculater span:active{
-    background: #00ff40;
-    color: #111;
-}
-.calculater span.clear{
-    background: #ff3077;
-    grid-column: span 2;
-    width: 240px;
-}
-.calculater span.plus{
-    grid-row: span 2;
-    height: 240px;
-}
-.calculater span.equal{
-    background: #00fff2;
-}
-   </style>
-   <body>
-     <form class="calculater" name="calc">
-         <input class="value" type="text" name="txt" readonly="">
-         <span class="num clear" onclick="document.calc.txt.value =''">c</span>
-         <span class="num" onclick="document.calc.txt.value +='/'">/</span>
-         <span class="num" onclick="document.calc.txt.value +='*'">*</span>
-         <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-         <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-         <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-         <span class="num" onclick="document.calc.txt.value +='-'">-</span>
-         <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-         <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-         <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-         <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
-         <span class="num" onclick="document.calc.txt.value +='3'">1</span>
-         <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-         <span class="num" onclick="document.calc.txt.value +='1'">3</span>
-         <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-         <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-         <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-         <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-     </form>
-   </body>
+    <head>
+        <title>Animated Login Form</title>
+        <link rel="stylesheet"> 
+        <script>
 
-</html>
+           var objPeople = [
+              {
+                 username: "daniel",
+                 password: "lalaland"
+              },
+              {
+                 username: "josel",
+                 password: "letzer"
+              },
+              {
+                 username: "andreas",
+                 password: "radelman"
+              },
+              {
+                 username: "michael",
+                 password: "Altschutz04"
+              }
+           ]
+
+           function getInfo(){
+               var username = document.getElementById("username").value
+               var password = document.getElementById("password").value
+               for(i =0;i<objPeople.length; i++){
+                  if(username==objPeople[i].username && password == objPeople[i].password){
+                     window.location="file:///F:/taschenrechner/index.html"
+                     return
+                  }
+                  else{
+                     
+                  }
+               }console.log("Falscher Benutzername oder falsches Passwort")
+           }
+           
+
+        </script>
+        <style>
+body{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   background: #34495e;
+   background-size: cover;
+   text-decoration: none;
+}
+.box{
+   width: 300px;
+   padding: 40px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: #191919;
+   text-align: center;
+   text-decoration: none;
+}
+.box h1{
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+   text-decoration: none;
+}
+.box input[type = "text"],.box input[type = "password"]{
+   border:0;
+   background:none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding:  14px 10px;
+   width: 200px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+   width: 280px;
+   border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+   border:0;
+   background: none;
+   display: block;
+   margin: 20px auto ;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding: 14px 40px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+   cursor: pointer;
+}
+.kaufen:hover{
+   background: #2ecc71;
+   text-decoration: none;
+}
+nav ul,li {
+   list-style-type: none;
+   text-decoration: none;
+}
+.kaufen { 
+   background: none;
+   display: block;
+   margin: 20px auto ;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding: 14px 40px;
+   margin-top: 5%;
+   color: gray;
+   border-radius: 24px;
+   transition: 0.25s;
+   cursor: pointer;
+   text-decoration: none;
+   margin-right:31%;
+}
+a{
+    text-decoration: none;
+}
+
+
+        </style>
+    </head>
+    <body>
+        
+        
+        <form class="box" action="login.html" method="post">
+            <h1>CULU Login</h1>
+            <input type="text" id="username" placeholder="Benutzername">
+            <input type="password" id="password" placeholder="Passwort">
+            <button type="button" onclick="getInfo()" class="kaufen">Login</button>
+        </form>
+    </body>
+  </html>
+
+  
