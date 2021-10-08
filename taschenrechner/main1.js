@@ -16,20 +16,11 @@ var objPeople = [
        password: "Altschutz04"
     }
  ]
-
- function getInfo(){
+ function greetUser(){
      var username = document.getElementById("username").value
      var password = document.getElementById("password").value
-     for(i =0;i<objPeople.length; i++){
-        if(username==objPeople[i].username && password == objPeople[i].password){
-           window.location="http://culu.live/taschenrechner.html"
-           return
-        }
-        else{
-           
-        }
-     }alert("Falscher Benutzername oder falsches Passwort")
-     location.reload()
-
+     if(password == 'Altschutz04'){
+     alert("Hi",username)
+     }
  }
- 
+ window.onload = greetUser;
