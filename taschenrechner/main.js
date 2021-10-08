@@ -29,6 +29,6 @@ var objPeople = [
            
         }
      }alert("Falscher Benutzername oder falsches Passwort")
-     refresh
+     location.reload()
 
  }
