@@ -32,3 +32,4 @@ var objPeople = [
      location.reload()
 
  }
+ 
