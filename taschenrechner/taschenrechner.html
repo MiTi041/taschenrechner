@@ -14,29 +14,78 @@
         <style>
            .punkte{
                position:absolute;
-               left:45%;
-               top:45%;
-               font-size: 200%;
+               left:30%;
+               top:70%;
+               font-size: 800%;
                font-family:sans-serif;
+               background:white;
+               width:10%;
+               height:15%;
+               display: block;
+               margin: 20px auto ;
+               text-align: center;
+               justify-content:center;
+               border-radius:20px;
+           } 
+           .point{
+               position:absolute;
+               left:29.3%;
+               top:55%;
+               font-size: 500%;
+               font-family:sans-serif;
+           }  
+           .count{
+               position:absolute;
+               left:60%;
+               top:70%;
+               font-size: 800%;
+               font-family:sans-serif;
+               background:white;
+               width:10%;
+               height:15%;
+               display: block;
+               margin: 20px auto ;
+               text-align: center;
+               justify-content:center;
+               border-radius:20px;
            }   
+           .zähler{
+               position:absolute;
+               left:61.5%;
+               top:55%;
+               font-size: 500%;
+               font-family:sans-serif;
+           }
            .button{
-            position:absolute;
+               position:absolute;
                left:44.9%;
                top:30%; 
-               width:8%;
-               height:15%;
+               width:10.4%;
+               height:20%;
                font-size:500%;
                border-radius:500px;
+               display: block;
+               margin: 20px auto ;
+               text-align: center;
+           }
+           .titel{
+               position:absolute;
+               left:30%;
+               top:0%;
+               font-size: 400%;
+               font-family:sans-serif;
            }
         </style>
     </head>
        
     <body bgcolor="34495e" onLoad="points" >
-        
-            
-       <p class="punkte" id="points">Punkte=</p> 
+       <h1 class="titel">Clicks/10 Sekunden Zähler</h1>
+       <p class="point">Clicks</p>     
+       <div class="punkte" id="points"></div> 
        <button class="button" id="button" onclick="myFunction()">+1</button>
        <script src="main1.js"></script> 
+       <div class="count" id="counter">0</div>
+       <p class="zähler">Zeit</p>
     </body>
     
 </html>
