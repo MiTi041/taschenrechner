@@ -1,26 +1,15 @@
-var objPeople = [
-    {
-       username: "daniel",
-       password: "lalaland"
-    },
-    {
-       username: "josel",
-       password: "letzer"
-    },
-    {
-       username: "andreas",
-       password: "radelman"
-    },
-    {
-       username: "michael",
-       password: "Altschutz04"
-    }
- ]
- function greetUser(){
-     var username = document.getElementById("username").value
-     var password = document.getElementById("password").value
-     if(password == 'Altschutz04'){
-     alert("Hi",username)
-     }
- }
- window.onload = greetUser;
+ var punkt =-1;
+ punkt++;
+ const elem = document.getElementById("points");
+ let myText = points.innerHTML;
+ points.innerHTML = "Punkte="+punkt;
+
+ function myFunction(){
+ punkt++;
+ const elem = document.getElementById("points");
+ let myText = points.innerHTML;
+ points.innerHTML = "Punkte="+punkt;
+};   
+
+
+  

@@ -13,17 +13,22 @@ var objPeople = [
     },
     {
        username: "michael",
-       password: "Altschutz04"
-    }
+       password: "altschutz"
+    },
+    {
+      username: "1",
+      password: "1"
+    },
  ]
 
- function getInfo(){
+ function clearBox(form){
      var username = document.getElementById("username").value
      var password = document.getElementById("password").value
      for(i =0;i<objPeople.length; i++){
         if(username==objPeople[i].username && password == objPeople[i].password){
-           window.location="http://culu.live/taschenrechner.html"
-           return
+         alert("Hi"+" "+username);
+         location.href = "file:///C:/Users/MICHI/Documents/GitHub/taschenrechner/taschenrechner/taschenrechner.html"
+         return
         }
         else{
            
