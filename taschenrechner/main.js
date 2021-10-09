@@ -27,7 +27,7 @@ var objPeople = [
      for(i =0;i<objPeople.length; i++){
         if(username==objPeople[i].username && password == objPeople[i].password){
          alert("Hi"+" "+username);
-         location.href = "file:///C:/Users/MICHI/Documents/GitHub/taschenrechner/taschenrechner/taschenrechner.html"
+         location.href = "http://culu.live/taschenrechner.html"
          return
         }
         else{
